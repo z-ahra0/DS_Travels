@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+h2 {
+    color: #333;
+    text-align: center;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.checkbox-group, .payment-method-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.submit-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 230px;
+    text-decoration: none;
+}
+.submit-button:hover {
+    background-color: #45a049;
+}
+#box0 {
+    color: #4CAF50;
+    text-align: end;
+    text-decoration: none;
+}

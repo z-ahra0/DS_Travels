@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DreamScape Travels</title>
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+    
+</head>
+<body>
+   
+  
+    <ul>
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT US</a></li>
+        <li><a href="{% url 'services' %}">SERVICES</a></li>
+        <li><a href="{% url 'news' %}">NEWS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="{% url 'info' %}">MORE INFO</a></li>
+    </ul>
+    <h1 style="text-align: center; font-size: 50px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkgreen;">Contact</h1>
+
+
+     <div class="others-section">
+       
+
+        <h2>Get in Touch with Us</h2>
+We’d love to hear from you! Whether you have questions, need assistance, or want to share feedback, our team is here to help. Reach out through any of the methods below, and we’ll get back to you as soon as possible.
+
+Contact Information
+Email: info@dreamscape-travels.com
+Phone: +1 (800) 555-TRVL
+Office Hours: Monday - Friday, 9:00 AM - 6:00 PM (local time)
+Address
+DreamScape Travels Headquarters
+123 Wanderlust Ave
+Adventure City, AC 56789
+
+<h2>Social Media</h2>
+Follow us on social media to stay updated on our latest travel packages, news, and promotions.<br>
+
+&nbsp;Instagram: @DreamScape-travels<br>
+&nbsp;Facebook: DreamScape Travels<br>
+&nbsp;Twitter: @DreamScapeTrav<br>
+<h3>Contact Form</h3>
+Feel free to fill out the form below, and one of our team members will reach out to you shortly.
+<form action="" method="post">
+{% csrf_token %}
+        <label>Full Name</label ><br>
+        <input type="name" name='full_name' required><br>
+        <label>Email</label><br>
+        <input type="email" name="email" required><br>
+        <label>Message</label><br>
+        <input type="text" name="message" required><br>
+        <button type="submit" class="submit-b" >Submit</button>
+        </table>
+</form>
+</div>
+
+
+    <div id="box2">
+        <a href="https://www.instagram.com/DreamScape-travels" target="_blank">
+            <img src="instagram.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.facebook.com/DreamScape-travels" target="_blank">
+            <img src="facebook.png" alt="Facebook Logo">
+        </a>
+    </div>
+
+</body>
+</html>

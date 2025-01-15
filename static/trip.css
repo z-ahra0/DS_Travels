@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #5c4ac7, #e96443);
+    height: 100%;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.trip-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 580px;
+    padding: 15px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.trip-card:hover {
+    transform: scale(1.03);
+}
+
+.trip-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.trip-images div {
+    height: 230px;
+    width: 48%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Specific Trip Images */
+#car1 {
+    background-image: url(ctrip1.jpg);
+}
+
+#car2 {
+    background-image: url(ctrip2.jpg);
+}
+
+#cruise1 {
+    background-image: url(crui1.jpg);
+}
+
+#cruise2 {
+    background-image: url(cruise2.jpg);
+}
+
+#boat1 {
+    background-image: url(boat2.jpg);
+}
+
+#boat2 {
+    background-image: url(boaty.jfif);
+}
+#car1 {
+    background-image: url(/static/images/ctrip1.jpg);
+}
+#car2 {
+    background-image: url(/static/images/ctrip2.jpg);
+}
+#cruise1 {
+    background-image: url(/static/images/cruise1.jpg);
+}
+#cruise2 {
+    background-image: url(/static/images/cruise2.jpg);
+}
+#boat1 {
+    background-image: url(/static/images/boat2.jpg);
+}
+#boat2 {
+    background-image: url(/static/images/boaty.jpg);
+}
+#box2 {
+    background-image: url(/static/images/ctrip1.jpg);
+}
+#box3 {
+    background-image: url(/static/images/ctrip2.jpg);
+}
+#box5 {
+    background-image: url(/static/images/cruise1.jpg);
+}
+#box6 {
+    background-image: url(/static/images/cruise2.jpg);
+}
+#box8 {
+    background-image: url(/static/images/boat2.jpg);
+}
+#box9 {
+    background-image: url(/static/images/boaty.jpg);
+}
+

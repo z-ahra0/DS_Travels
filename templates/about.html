@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DreamScape Travels</title>
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    
+</head>
+<body>
+   
+    <!-- Navbar -->
+    <ul>
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="#about us">ABOUT US</a></li>
+        <li><a href="{% url 'services' %}">SERVICES</a></li>
+        <li><a href="{% url 'news' %}">NEWS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        <li><a href="{% url 'info' %}">MORE INFO</a></li>
+    </ul>
+    <h1 style="text-align: center; font-size: 50px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkgreen;">About Us</h1>
+
+    <!-- About Us Content -->
+    <div class="about-section">
+        <h2>Our Story</h2>
+        <p>DreamScape Travels was born out of a shared passion for exploring the world’s hidden wonders and crafting unforgettable experiences for travelers everywhere. We started as a small group of adventure enthusiasts, each with a dream of creating a travel agency that prioritizes authenticity, excitement, and seamless planning. Over the years, DreamScape has blossomed into a vibrant community of wanderlust-filled explorers who share a love for unique journeys and unforgettable moments.</p>
+
+        <h2>Our Mission and Values</h2>
+        <p>At DreamScape, our mission is simple: to bring our clients one-of-a-kind travel experiences that stay with them for a lifetime. We believe in genuine connections, sustainable travel, and providing exceptional service. Every trip we plan is crafted with care, respect, and an eye for the authentic, ensuring our clients get more than just a vacation — they get memories, friendships, and stories to share.</p>
+        <ul>
+            <li><strong>Authenticity</strong>: Real experiences, real connections.</li>
+            <li><strong>Sustainability</strong>: Protecting the places we love.</li>
+            <li><strong>Customer Focus</strong>: Personalized service every step of the way.</li>
+        </ul>
+
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="team_member1.jpg" alt="">
+                <p><strong>Zahra Aminu</strong><br>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="team_member2.jpg" alt="">
+                <p><strong>Hindu Mustapha</strong><br>Lead Travel Consultant</p>
+            </div>
+            <div class="team-member">
+                <img src="team_member3.jpg" alt="">
+                <p><strong>Usman Hassan</strong><br>Adventure Guide</p>
+            </div>
+        </div>
+
+        <h2>Why Choose Us?</h2>
+        <p>Choosing DreamScape means opting for a travel experience with a personal touch. Our team works tirelessly to create exclusive packages, organize all-inclusive trips, and bring clients to stunning destinations they won’t find on typical itineraries. Every aspect of your trip is tailored, so you can focus on what matters — creating memories.</p>
+
+        <h2>Client Testimonials</h2>
+        <p>"DreamScape planned the perfect anniversary trip for us! We were so impressed by the attention to detail and the unique experiences we enjoyed. Can’t wait to travel with them again!" – <strong>Sarah & James</strong></p>
+        <p>"Our family trip was seamless from start to finish. The guides were friendly and knowledgeable, and the kids loved every second!" – <strong>The Harris Family</strong></p>
+
+        <h2>Our Vision for the Future</h2>
+        <p>As DreamScape grows, we aim to expand our reach to more destinations and foster stronger community connections. We’re committed to exploring sustainable travel options and enhancing our services so that our clients continue to experience the best the world has to offer.</p>
+
+        <h2>Giving Back</h2>
+        <p>We believe in traveling with purpose. DreamScape proudly supports local communities and conservation efforts at each of our travel destinations. By giving back, we ensure that these beautiful places are preserved for future generations to enjoy.</p>
+
+    </div>
+
+   
+    <div id="box2">
+        <a href="https://www.instagram.com/DreamScape-travels" target="_blank">
+            <img src="instagram.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.facebook.com/DreamScape-travels" target="_blank">
+            <img src="facebook.png" alt="Facebook Logo">
+        </a>
+    </div>
+
+</body>
+</html>

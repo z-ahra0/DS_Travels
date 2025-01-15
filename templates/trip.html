@@ -1,0 +1,46 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips Layout</title>
+    <link rel="stylesheet" href="{% static 'trip.css' %}">
+</head>
+<body>
+    <ul>
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT US</a></li>
+        <li><a href="{% url 'services' %}">SERVICES</a></li>
+        <li><a href="{% url 'news' %}">NEWS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        <li><a href="{% url 'info' %}">MORE INFO</a></li>
+    </ul>
+
+    <div class="trip-container">
+        <div class="trip-card" id="car-trips">
+            <h2>Car Trips</h2>
+            <div class="trip-images">
+                <div id="car1"></div>
+                <div id="car2"></div>
+            </div>
+        </div>
+
+        <div class="trip-card" id="cruises">
+            <h2>Cruises</h2>
+            <div class="trip-images">
+                <div id="cruise1"></div>
+                <div id="cruise2"></div>
+            </div>
+        </div>
+
+        <div class="trip-card" id="boat-trips">
+            <h2>Boat Trips</h2>
+            <div class="trip-images">
+                <div id="boat1"></div>
+                <div id="boat2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'cars.css' %}">
+</head>
+<body>
+
+    <!-- Navbar copied from the hotel page -->
+    <ul>
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT US</a></li>
+        <li><a href="{% url 'services' %}">SERVICES</a></li>
+        <li><a href="{% url 'news' %}">NEWS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        <li><a href="{% url 'info' %}">MORE INFO</a></li>
+    </ul>
+
+    <h2 id="p" style="margin: 10px;">SUVs</h2>
+    <div id="box1"></div>
+    <div id="box2"></div>
+
+    <h2 id="k" style="margin: 10px;">Minivan</h2>
+    <div id="box3"></div>
+    <div id="box4"></div>
+
+    <h2 id="m" style="margin: 10px;">Sedan</h2>
+    <div id="box5"></div>
+    <div id="box6"></div>
+
+    <form action="/submit-c">
+        <h3 style="text-align: center;">Do you want a personal vehicle during your vacation?<br>We've got you covered</h3>
+        <label>Full Name</label>
+        <input type="name" required><br>
+        <label>Email</label>
+        <input type="email" required><br>
+        <label>Message</label>
+        <input type="text" required><br>
+        <label for="tripType">Type of Car</label>
+        <select id="tripcar" name="tripcar" required>
+            <option value="SUVs">SUVs</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Minivan">Minivan</option>
+            <option value="Sedan">Sedan</option>
+        </select>
+        <label>Driver</label>
+        <div class="payment-method-group">
+            <label><input type="radio" name="paymentMethod" value="credit" required>Yes</label>
+            <label><input type="radio" name="paymentMethod" value="paypal">No</label>
+        </div>
+        <h3 style="text-align: center;">Payment Details</h3>
+        <label>Payment Method</label>
+        <div class="payment-method-group">
+            <label><input type="radio" name="paymentMethod" value="credit" required> Credit/Debit Card</label>
+            <label><input type="radio" name="paymentMethod" value="paypal"> PayPal</label>
+        </div>
+
+        <label for="cardName">Cardholder Name</label>
+        <input type="text" id="cardName" name="cardName" required>
+
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <label for="expiry">Expiration Date</label>
+        <input type="month" id="expiry" name="expiry" required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" required>
+
+        <label for="billingAddress">Billing Address</label>
+        <textarea id="billingAddress" name="billingAddress" rows="2" required></textarea>
+
+        <button type="submit" class="submit-c">Submit</button>
+    </form>
+
+</body>
+</html>

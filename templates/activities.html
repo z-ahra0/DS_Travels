@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'activities.css' %}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <ul>
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT US</a></li>
+        <li><a href="{% url 'services' %}">SERVICES</a></li>
+        <li><a href="{% url 'news' %}">NEWS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        <li><a href="{% url 'info' %}">MORE INFO</a></li>
+    </ul>
+
+    <!-- Outdoor Games Section -->
+    <div id="box1" class="section">
+        <h2>Outdoor Games</h2>
+        <div class="trip-container">
+            <div id="box2" class="trip-box"></div>
+            <div id="box3" class="trip-box"></div>
+        </div>
+    </div>
+
+    <!-- Riding Section -->
+    <div id="box4" class="section">
+        <h2>Riding</h2>
+        <div class="trip-container">
+            <div id="box5" class="trip-box"></div>
+            <div id="box6" class="trip-box"></div>
+        </div>
+    </div>
+
+    <!-- Swimming Section -->
+    <div id="box7" class="section">
+        <h2>Swimming</h2>
+        <div class="trip-container">
+            <div id="box8" class="trip-box" ></div>
+            <div id="box9" class="trip-box" ></div>
+        </div>
+    </div>
+
+</body>
+</html>

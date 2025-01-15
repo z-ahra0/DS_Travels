@@ -1,0 +1,118 @@
+body, html {
+     margin: 0;
+    padding: 0;
+     height: 100%;
+    overflow-x: hidden;
+    background-image: url('/static/images/2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: 98%;
+    border-radius: 50px;
+    background-color:rgb(45, 144, 182, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+        li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #000;
+            border-radius: 20px;
+        }
+   
+        .others-section {
+            margin: 50px auto;
+            max-width: 1200px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        h2 {
+            color: darkgreen;
+            font-size: 2.5em;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        
+
+
+        #box2 {
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            height: 50px;
+            width: 1230px;
+            border-radius: 30px;
+            padding: 10px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 15px; 
+        }
+        #box2 img {
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+        
+
+        body {
+            padding-bottom: 50px;
+        }
+        form {
+           padding: 10px 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            align-items: center;
+        }
+        input {
+            width: 50%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            background-color: beige;
+        }
+       
+        .submit-b{
+            background-color: #4CAF50;
+            color: black;
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 260px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .submit-b:hover {
+            background-color: #45a049;
+        }
+           
+    

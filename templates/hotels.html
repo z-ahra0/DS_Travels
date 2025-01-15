@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modernized Hotel Layout</title>
+    <link rel="stylesheet" href="{% static 'hotels.css' %}">
+</head>
+<body>
+    <ul>
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT US</a></li>
+        <li><a href="{% url 'services' %}">SERVICES</a></li>
+        <li><a href="{% url 'news' %}">NEWS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        <li><a href="{% url 'info' %}">MORE INFO</a></li>
+    </ul>
+
+    <div class="hotel-container">
+        <div class="hotel-card" id="paris">
+            <h2>Ritz Hotel Paris</h2>
+            <div class="hotel-images">
+                <div id="paris1"></div>
+                <div id="paris2"></div>
+            </div>
+        </div>
+
+        <div class="hotel-card" id="kenya">
+            <h2>The Boma Nairobi Kenya</h2>
+            <div class="hotel-images">
+                <div id="kenya1"></div>
+                <div id="kenya2"></div>
+            </div>
+        </div>
+
+        <div class="hotel-card" id="maldives">
+            <h2>Madi Grand Hotel Maldives</h2>
+            <div class="hotel-images">
+                <div id="maldives1"></div>
+                <div id="maldives2"></div>
+            </div>
+        </div>
+
+        <div class="hotel-card" id="singapore">
+            <h2>Orchard Hotel Singapore</h2>
+            <div class="hotel-images">
+                <div id="singapore1"></div>
+                <div id="singapore2"></div>
+            </div>
+        </div>
+
+        <div class="hotel-card" id="italy">
+            <h2>Hotel Artemide Italy</h2>
+            <div class="hotel-images">
+                <div id="italy1"></div>
+                <div id="italy2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
