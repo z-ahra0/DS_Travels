@@ -125,20 +125,20 @@ h2 {
 #box1 {
     background-color: rgb(9, 130, 205);
     margin-top: -10px;
-    margin-left: 550px;
-    width: 150px;
     text-align: center;
-    list-style: none;
     font-size: 25px;
     font-family: fantasy;
     border-radius: 30px;
-    position:absolute;
     z-index: 1;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #box1 a {
     text-decoration: none;
     color: darkgreen;
+    margin: auto;
 }
 #box1:hover{
     transform: scale(1.05);
