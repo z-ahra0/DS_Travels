@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #5c4ac7, #e96443); 
+    height: 100%;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border-radius: 20px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Flexbox Layout for Boxes */
+.trip-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.trip-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 270px;
+    height: 230px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.trip-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+#box2 {
+    background-image: url(/static/images/game1.jpg);
+}
+#box3 {
+    background-image: url(/static/images/game2.jpg);
+}
+#box5 {
+    background-image: url(/static/images/riding1.jpg);
+}
+#box6 {
+    background-image: url(/static/images/riding2.jpg);
+}
+#box8 {
+    background-image: url(/static/images/swimming1.jpg);
+}
+#box9 {
+    background-image: url(/static/images/swimming2.jpg);
+}
+
+
