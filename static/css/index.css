@@ -2,6 +2,198 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: auto;
+    overflow-x: hidden; /* allow vertical scroll */
+    font-family: Arial, sans-serif;
+}
+
+/* Slider */
+.slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 50px;
+    background-color: rgba(45, 144, 182, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border-radius: 20px;
+}
+
+/* Hero Headings */
+#dis1 {
+    font-style: italic;   
+    letter-spacing: 1px;
+    font-size: 3em;
+    color: darkgreen;
+    background-color: rgba(241, 239, 239, 0.8);
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    font-family: herman;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+#dis2 {
+    text-align: center;
+    font-style: bold;
+    font-family: selima;
+    letter-spacing: 3px;
+    font-size: 5vw; /* responsive font size */
+    color: darkgreen;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Book Now Button */
+#box1 {
+    background-color: rgb(9, 130, 205);
+    text-align: center;
+    font-size: 25px;
+    font-family: fantasy;
+    border-radius: 30px;
+    z-index: 1;
+    margin: 20px auto;
+    width: 200px;
+    padding: 10px 0;
+    transition: transform 0.3s;
+}
+
+#box1 a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+#box1:hover {
+    transform: scale(1.05);
+}
+
+/* Services List */
+#dis3 {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(45, 144, 182, 0.3);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#dis3 li {
+    margin: 5px 10px;
+}
+
+#dis3 a {
+    text-decoration: none;
+    color: rgb(115, 254, 208);
+    padding: 4px 20px;
+}
+
+/* Destination Dropdown */
+#destination {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+/* Footer / Info */
+#box2 {
+    margin: 30px auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #dis1 {
+        font-size: 6vw;
+        width: 95%;
+    }
+    #dis2 {
+        font-size: 8vw;
+    }
+    #box1 {
+        width: 70%;
+        font-size: 18px;
+    }
+    #dis3 {
+        font-size: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #box2 {
+        width: 95%;
+    }
+    li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
     height: auto;             /* changed from 100% */
     overflow-x: hidden;       /* allow vertical scroll */
 }
